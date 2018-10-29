@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>My Own Blog</h1>
+
+        <ul>
+            {% for post in posts %}
+            <li><a href="{{ url_for('show') }}?id={{post.id}}">{{post.name}}</a></li>
+            <p>{{post.blog}}</p>
+            {% endfor %}
+        </ul>
+{% endblock %}

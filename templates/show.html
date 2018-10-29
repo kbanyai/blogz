@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{{post.name}}
+<br>
+<br>
+{{post.blog}}
+<br>
+<br>
+
+<form action="/delete-task" method="POST" style="display:inline-block;">
+    <input type="hidden" name="task-id" value="{{post.id}}" />
+    <input type="submit" value="Delete!" />
+</form>
+
+{% endblock %}

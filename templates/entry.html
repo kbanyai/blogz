@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!doctype html>
+<html>
+
+<body>
+
+    <form method='POST'>
+        <label>
+            Name:
+            <input type="text" name='name' />
+        </label>
+        <label>
+            Entry:
+            <input type="text" name='blog' />
+        </label>
+        <input type="submit" value='Add Blog Entry' />
+    </form>
+
+</body>
+</html>
+{% endblock %}
